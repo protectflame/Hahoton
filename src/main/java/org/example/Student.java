@@ -68,4 +68,8 @@ public class Student {
                 '}';
     }
 
+
+    public void info(){
+
+    }
 }
