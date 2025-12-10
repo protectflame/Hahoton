@@ -12,7 +12,7 @@ public class StudentManager {
     private int nextId = 1;
     private ArrayList<Student> students = new ArrayList<>();
 
-    //Добавление студента как перечент аргументов
+    //Добавлени е студента как перечент аргументов
     public void add(String name, int age, List<String> enrolledCourses) {
         Student student = new Student(nextId, name, age, 0.0, enrolledCourses);
         students.add(student);
@@ -20,10 +20,11 @@ public class StudentManager {
     }
     //Добавление студента как объекта
     public void add(Student student) {
-        students.add(student);
-        if (student.getId() >= nextId) {
+            students.add(student);
             nextId = student.getId() + 1;
-        }
+            student.setId(nextId);
+            nextId++;
+
     }
 
     //Удаление по ID
