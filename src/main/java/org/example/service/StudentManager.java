@@ -4,26 +4,42 @@ import org.example.Student;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class StudentManager {
-    private int id;
-
-
-    Random rand = new Random();
+    private int nextId = 1;
     private ArrayList<Student> students = new ArrayList<>();
 
-    public void add(String name,int age, List<String> enrolledCourses) {
-    int ID = 1;
-    Student s1 = new Student(name,age,enrolledCourses);
-    students.add(s1);
-    s1 = new Student();
-    ID++;
-
-
+    public void add(String name, int age, List<String> enrolledCourses) {
+        Student student = new Student(nextId, name, age, 0.0, enrolledCourses);
+        students.add(student);
+        nextId++;
     }
 
-    public void remove(int id){
+    public void add(Student student) {
+        students.add(student);
+        if (student.getId() >= nextId) {
+            nextId = student.getId() + 1;
+        }
+    }
 
+    public boolean remove(int id) {
+        return students.removeIf(s -> s.getId() == id);
+    }
+
+    public Student getById(int id) {
+        for (Student s : students) {
+            if (s.getId() == id) {
+                return s;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentManager{" +
+                "nextId=" + nextId +
+                ", students=" + students +
+                '}';
     }
 }
