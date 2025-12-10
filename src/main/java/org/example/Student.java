@@ -75,9 +75,4 @@ public class Student {
                 ", enrolledCourses=" + enrolledCourses +
                 '}';
     }
-
-
-    public void info(){
-
-    }
 }
