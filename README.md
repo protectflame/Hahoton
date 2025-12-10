@@ -35,3 +35,14 @@
 
 **Переопределённый метод + toString**
 
+### Задание 2 
+
+### Class User 
+
+- userName
+- List <String> subscriptions;
+- List <String> users 
+- List <User> allUsers
+
+Методы классы 
+- isUsers (Возвращает true or false если )

@@ -30,18 +30,14 @@ public class Test {
         System.out.println("\n=== Диалог между Пользователь1 и Пользователь2 ===");
         System.out.println(MessageDatabase.showDialog(user1, user2));
 
-        System.out.println("\n=== Диалог между Пользователь2 и Пользователь1 ===");
-        System.out.println(MessageDatabase.showDialog(user2, user1));
-
         System.out.println("\n=== Диалог между Пользователь3 и Пользователь1 ===");
         System.out.println(MessageDatabase.showDialog(user3, user1));
 
         System.out.println("\n=== Диалог между Пользователь1 и Пользователь3 ===");
         System.out.println(MessageDatabase.showDialog(user1, user3));
-        System.out.println(MessageDatabase.showDialog(user1, user3));
 
         Scanner sc = new Scanner(System.in);
-        boolean RUN = false;
+        boolean RUN = true;
         while (RUN) {
             System.out.println("Выберите, кому написать — введите имя (ID добавим позже)");
             System.out.println("Список доступных пользователей: " + User.getUsers());
