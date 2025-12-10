@@ -12,14 +12,21 @@ public class Student {
     public Student(int id, String name, int age, double gpa, List<String> enrolledCourses) {
         this.id = id;
         this.name = name;
+        if(age > 0) throw new IllegalArgumentException();
+        if(gpa > 0) throw new IllegalArgumentException();
         this.age = age;
-        this.gpa = gpa;
         this.enrolledCourses = enrolledCourses;
+        this.gpa = gpa();
     }
     public Student(String name, int age, List<String> enrolledCourses) {
         this.name = name;
         this.age = age;
         this.enrolledCourses = enrolledCourses;
+    }
+    public double gpa (){
+        int count = enrolledCourses.size();
+        int AVG = 5/count;
+        return AVG;
     }
 
     public Student() {
