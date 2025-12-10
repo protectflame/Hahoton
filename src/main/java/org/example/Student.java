@@ -22,6 +22,9 @@ public class Student {
         this.enrolledCourses = enrolledCourses;
     }
 
+    public Student() {
+    }
+
     public int getId() {
         return id;
     }

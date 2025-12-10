@@ -7,6 +7,8 @@ public class Main {
         Student st1 = new Student("Омаев Магомед", 18, new ArrayList<String>());
         Student st2 = new Student("Насрулаева Айзар", 17, new ArrayList<String>());
         Student st3 = new Student("Алиев Шамиль", 17, new ArrayList<String>());
-
+        ArrayList <Student> S = new ArrayList<>();
+        S.add(st1);
+        S.remove(st1);
     }
 }
