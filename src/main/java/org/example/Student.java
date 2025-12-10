@@ -16,6 +16,11 @@ public class Student {
         this.gpa = gpa;
         this.enrolledCourses = enrolledCourses;
     }
+    public Student(String name, int age, List<String> enrolledCourses) {
+        this.name = name;
+        this.age = age;
+        this.enrolledCourses = enrolledCourses;
+    }
 
     public int getId() {
         return id;
