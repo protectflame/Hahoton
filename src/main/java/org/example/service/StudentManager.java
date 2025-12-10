@@ -4,6 +4,8 @@ import org.example.Student;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class StudentManager {
     private int nextId = 1;
@@ -33,6 +35,21 @@ public class StudentManager {
             }
         }
         return null;
+    }
+    public List<Student> filterByAge(List<Student> students, int minAge, int maxAge){
+             return students.stream()
+                .filter(student -> getByAge() >= minAge && getByAge() <= maxAge)
+                     .collect(Collectors.toList());
+
+
+
+    }
+
+    public int getByAge() {
+        for (Student s : students) {
+            return s.getAge();
+        }
+        return 0;
     }
 
     @Override
