@@ -1,8 +1,7 @@
-package org.example;
-import org.example.service.StudentManager;
+package org;
+import org.service.StudentManager;
 
 import java.util.*;
-import java.io.*;
 
 public class Main {
     static void main(String[] args) {

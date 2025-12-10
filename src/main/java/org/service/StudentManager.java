@@ -1,10 +1,9 @@
-package org.example.service;
+package org.service;
 
-import org.example.Student;
+import org.Student;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
     //

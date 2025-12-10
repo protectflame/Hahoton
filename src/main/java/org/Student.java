@@ -1,6 +1,4 @@
-package org.example;
-
-import org.example.service.StudentManager;
+package org;
 
 import java.util.List;
 
