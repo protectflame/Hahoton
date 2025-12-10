@@ -16,7 +16,9 @@ public class use {
         this.enrolledCourses = enrolledCourses;
      */
     public void add(String name,int age, List<String> enrolledCourses) {
+    int ID = rand.nextInt(1,10000000);
     Student s1 = new Student(name,age,enrolledCourses);
+
 
     }
 
