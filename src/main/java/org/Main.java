@@ -1,11 +1,10 @@
-package org.example;
-import org.example.service.StudentManager;
+package org;
+import org.service.StudentManager;
 
 import java.util.*;
-import java.io.*;
 
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
         ArrayList <Student> S = new ArrayList<>();
         StudentManager a = new StudentManager();
@@ -18,6 +17,7 @@ public class Main {
         Student st5 = new Student("Мужлатов Ибрагим", 16, new ArrayList<String>());
         Student st6 = new Student("Кабельхановна Марьям", 18, new ArrayList<String>());
 
+
         // добавляем студентов
         a.add(st1);
         a.add(st2);
@@ -26,12 +26,12 @@ public class Main {
         a.add(st5);
         a.add(st6);
 
-        a.remove(1);
+        //a.remove(1);
 
         // вывод по возрасту(диапозон)
         System.out.println(a);
 
-       // System.out.println(a);
+       //System.out.println(a);
 
 
 

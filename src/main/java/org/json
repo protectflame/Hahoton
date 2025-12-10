@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Насрулаева Айзар",
+    "age": 17,
+    "gpa": 5.0,
+    "enrolledCourses": ["java", "devops"]
+  },
+  {
+    "id": 2,
+    "name": "Омаев Магомед",
+    "age": 18,
+    "gpa": 5.0,
+    "enrolledCourses": ["java", "devops"]
+  }
+]

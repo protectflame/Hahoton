@@ -1,15 +1,14 @@
-package org.example.service;
+package org.service;
 
-import org.example.Student;
+import org.Student;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
     //
 public class StudentManager {
-    private int nextId = 1;
+    private int nextId = 0;
     private ArrayList<Student> students = new ArrayList<>();
 
     //Добавлени е студента как перечент аргументов
@@ -21,7 +20,6 @@ public class StudentManager {
     //Добавление студента как объекта
     public void add(Student student) {
             students.add(student);
-            nextId = student.getId() + 1;
             student.setId(nextId);
             nextId++;
 
